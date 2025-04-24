@@ -1,0 +1,7 @@
+To defend against XSS, I will treat all user input as untrusted and validate or clean it on the server before sending it back to the browser.
+Use escaping when inserting data into HTML, JavaScript, CSS, or URLs so that special characters can't break out of their intended spots.
+If the users submit formatted text or HTML, I then run it through a trusted a library that strips out any disallowed tags or attributes. Add a strict CSP (Content Security Policy) header to control which scripts and resoruces are allowed to run on the pages.
+Mark session and authentication cookies as HttpOnly so they are not accessible from JavaScript if an attacker does manage to slip in a script.
+I also, adopt a whitelist approach for acceptable input rather than trying to block malicious patterns, since blacklists are easy to bypass.
+Automate security scans and perform regular code reviews to spot any unclear outputs or misconfigured CSP rules.
+Lastly, balance security with user experience, strict rules can break legitimate functionality, so I repeatedly adjust the defenses to keep users safe while still preserving the features they need.

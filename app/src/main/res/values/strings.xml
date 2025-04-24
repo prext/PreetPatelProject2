@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Client Paragraph Processing</string>
+    <string name="edit_port">Enter port number</string>
+    <string name="edit_host">Enter host domain name</string>
+    <string name="button_connect">Connect to Server</string>
+    <string name="edit_operation">Enter operation [alphag or longest]</string>
+    <string name="edit_filename">Enter file name [p1.txt or p11.txt]</string>
+    <string name="button_process">Send to Server</string>
+    <string name="text_comm_heading">
+        <b><u>Process a paragraph using a server.</u></b>\n\n
+        Enter an operation (alphag or longest) and the file name from the assets folder.\n
+        Then press the button to send the request.\n
+    </string>
+</resources>

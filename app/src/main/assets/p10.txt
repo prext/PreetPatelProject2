@@ -1,0 +1,7 @@
+Prepared statements in PHP stop SQL injections by keeping the SQL code and the users data spearate.
+You write the query with ? placeholders, then bind any input values as parameters so they are always treated as data, never as part of the SQL itself.
+That way, no matter what someone types into a form, it can't change your query's structure or sneak in malicious commands.
+On top of that, prepared statements make your code cleaner and more consistent.
+The SQL lives in one place, you give different values as needed, and the database can even optimize the query for better performance and easier maintenance.
+Also, since the SQL text never changes at runtime, it's simpler to review and audit the queries for secuirty issues.
+And because the database engine handles binding and escaping, you don't have to remember to validate every variable yourself, which reduces the changes of error leading to vulnerabilities.
